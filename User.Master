@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="Orphanage.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class="header">
+            <div class="logo">Orphanage</div>
+            <div class="navbar">
+                <a href="home.aspx">Home</a>
+                <a href="about.aspx">About</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+        <div class="container">
+            <h1>User Master Page</h1>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
