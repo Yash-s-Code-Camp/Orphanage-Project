@@ -17,12 +17,12 @@
             <div class="navbar">
                 <a href="home.aspx">Home</a>
                 <a href="about.aspx">About</a>
-                <a href="profile.aspx">Profile</a>
+                <a href="login.aspx">Login</a>
+                <a href="sign-up.aspx">Sign Up</a>               
             </div>
         </div>
         
         <div class="container">           
-            <h1>Main Master Page</h1>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

@@ -20,7 +20,6 @@
             </div>
         </div>
         <div class="container">
-            <h1>User Master Page</h1>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
