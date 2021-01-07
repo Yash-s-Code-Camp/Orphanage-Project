@@ -18,13 +18,12 @@ namespace Orphanage
         {
             if (txtemail.Text.Equals("yddc902@gmail.com") && txtpassword.Text.Equals("123"))
             {
-                lblstatus.Text = "Logged in";
+                Response.Redirect("dashboard.aspx");
             }
             else
             {
                 lblstatus.Text = "Invalid Auhentication";
-            }
-           
+            }           
         }
     }
 }

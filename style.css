@@ -56,28 +56,26 @@
 }
 
 .form-control {
-    height: 36px;
-    width: 200px;
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
     padding: 2px 10px;
-    border: 0;
     border-radius: 3px;
-    background: lightgray;
-}
+    }
 
     .form-control:focus {
         outline: 2px solid #FAA916;
     }
 
-.btn-login {
+.btn-signup, .btn-login {
     height: 36px;
     width: 100px;
     padding: 2px 10px;
     border: 0;
     border-radius: 3px;
     background: #FAA916;
-
-    font-weight:600;
-    letter-spacing:1px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 
