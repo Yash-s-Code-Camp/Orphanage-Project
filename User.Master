@@ -16,7 +16,7 @@
             <div class="navbar">
                 <a href="home.aspx">Home</a>
                 <a href="about.aspx">About</a>
-                <a href="#">Logout</a>
+                <a href="Logout.aspx">Logout</a>
             </div>
         </div>
         <div class="container">

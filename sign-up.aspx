@@ -26,6 +26,7 @@
         <div class="form-group">
             <asp:TextBox ID="txtPassword2" runat="server"  CssClass="form-control" placeholder="Re-enter Password" TextMode="Password"></asp:TextBox>
         </div>
+        
         <div class="form-group">
             <asp:Button ID="btnSignup" runat="server" CssClass="btn-signup" Text="Sign Up" OnClick="Button1_Click" />
         </div>

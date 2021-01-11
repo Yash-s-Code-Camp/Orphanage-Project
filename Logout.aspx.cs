@@ -7,11 +7,12 @@ using System.Web.UI.WebControls;
 
 namespace Orphanage
 {
-    public partial class dashboard : System.Web.UI.Page
+    public partial class Logout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblWelcome.Text = "Welcome, " + Session["email"].ToString();
+            Session.Clear();
+            Response.Redirect("home.aspx");
         }
     }
 }
