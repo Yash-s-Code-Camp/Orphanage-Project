@@ -1,5 +1,7 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,6 +16,26 @@ namespace Orphanage
             string value = CheckBox1.Checked ? "Checked" : "Not checked";
 
             Label1.Text = value;
+
+
+            string connStr = "server=localhost;user id=root;database=orphanage";
+
+            MySqlConnection conn = new MySqlConnection(connStr);
+
+            string sql = "SELECT * FROM users";
+
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+            MySqlDataAdapter da = new MySqlDataAdapter();
+
+            da.SelectCommand = cmd;
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
         }
 
 

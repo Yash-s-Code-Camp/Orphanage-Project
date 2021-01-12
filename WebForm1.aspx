@@ -6,4 +6,6 @@
             <asp:CheckBox ID="CheckBox1" runat="server" Text="I agree..." AutoPostBack="True" Checked="True" OnCheckedChanged="CheckBox1_CheckedChanged" />
         </div>
     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <asp:GridView ID="GridView1" runat="server">
+    </asp:GridView>
 </asp:Content>
